@@ -7,8 +7,7 @@ class Unit {
   const Unit({
     @required this.name,
     @required this.conversion,
-  })
-      : assert(name != null),
+  })  : assert(name != null),
         assert(conversion != null);
 
   Unit.fromJson(Map jsonMap)
