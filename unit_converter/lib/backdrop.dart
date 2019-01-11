@@ -1,4 +1,5 @@
 import 'dart:math' as math;
+
 import 'package:flutter/material.dart';
 import 'package:meta/meta.dart';
 
@@ -64,9 +65,12 @@ class _BackdropTitle extends AnimatedWidget {
   final Widget frontTitle;
   final Widget backTitle;
 
-  const _BackdropTitle(
-      {Key key, Listenable listenable, this.frontTitle, this.backTitle})
-      : super(key: key, listenable: listenable);
+  const _BackdropTitle({
+    Key key,
+    Listenable listenable,
+    this.frontTitle,
+    this.backTitle,
+  }) : super(key: key, listenable: listenable);
 
   @override
   Widget build(BuildContext context) {
